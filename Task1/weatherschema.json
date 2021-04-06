@@ -1,0 +1,117 @@
+﻿{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Weather Report",
+    "description": "UK weather summary data",
+    "type": "object",
+    "properties": {
+        "cities": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "weather": {
+                        "type": "array",
+                        "items": {
+                            "type": "object",
+                            "properties": {
+                                "id": {
+                                    "type": "integer",
+                                    "minimum": 0.0
+                                },
+                                "main": {
+                                    "type": "string",
+                                    "enum": [
+                                        "Clouds",
+                                        "Sun",
+                                        "Rain",
+                                        "Snow"
+                                    ]
+                                },
+                                "description": {
+                                    "type": "string"
+                                },
+                                "icon": {
+                                    "type": "string"
+                                }
+                            },
+                            "required": [
+                                "id",
+                                "main",
+                                "description",
+                                "icon"
+                            ]
+                        }
+                    },
+                    "main": {
+                        "type": "object",
+                        "properties": {
+                            "temp": {
+                                "type": "number",
+                                "minimum": 0.0
+                            },
+                            "temp_min": {
+                                "type": "number"
+                            },
+                            "temp_max": {
+                                "type": "number"
+                            },
+                            "pressure": {
+                                "type": "integer"
+                            },
+                            "humidity": {
+                                "type": "integer"
+                            },
+                            "unit": {
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "temp",
+                            "temp_min",
+                            "temp_max",
+                            "pressure",
+                            "humidity"
+                        ]
+                    },
+                    "wind": {
+                        "type": "object",
+                        "properties": {
+                            "speed": {
+                                "type": "number"
+                            },
+                            "deg": {
+                                "type": "integer"
+                            },
+                            "dir": {
+                                "type": "string"
+                            },
+                            "chillfactor": {
+                                "type": "string"
+                            }
+                        },
+                        "required": [
+                            "speed",
+                            "deg",
+                            "dir",
+                            "chillfactor"
+                        ]
+                    },
+
+                    "name": {
+                        "type": "string"
+                    }
+                },
+                "required": [
+                
+                    "weather",
+                 	 "main",
+                     "wind",
+                     "name"
+                ]
+            }
+        }
+    },
+    "required": [
+        "cities"
+    ]
+}
