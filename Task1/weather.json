@@ -160,5 +160,167 @@
         },
         "name": "London"
 	
-  } 
+  },
+  {
+    "weather": [
+        {
+            "id": 801,
+            "main": "Clouds",
+            "description": "broken clouds",
+            "icon": "04d"
+        }
+    ],
+
+    "main": {
+        "temp": 281.51,
+        "temp_min": 280.93,
+        "temp_max": 282.15,
+        "pressure": 1011,
+        "humidity": 37
+    },
+    "wind": {
+        "speed": 6.69,
+        "deg": 330,
+        "dir": "north-west",
+        "chillfactor": "sdfg"
+
+    },
+    "name": "Coventry"
+
+},
+{
+    "weather": [
+        {
+            "id": 802,
+            "main": "Clouds",
+            "description": "broken clouds",
+            "icon": "04d"
+        }
+    ],
+
+    "main": {
+        "temp": 281.51,
+        "temp_min": 280.93,
+        "temp_max": 282.15,
+        "pressure": 1011,
+        "humidity": 37
+    },
+    "wind": {
+        "speed": 6.69,
+        "deg": 330,
+        "dir": "north-west",
+        "chillfactor": "sdfg"
+
+    },
+    "name": "Glassdoor"
+
+},
+{
+    "weather": [
+        {
+            "id": 803,
+            "main": "Clouds",
+            "description": "cloud",
+            "icon": "04d"
+        }
+    ],
+
+    "main": {
+        "temp": 281.51,
+        "temp_min": 280.93,
+        "temp_max": 282.15,
+        "pressure": 1011,
+        "humidity": 37
+    },
+    "wind": {
+        "speed": 6.69,
+        "deg": 330,
+        "dir": "south-west",
+        "chillfactor": "sdfg"
+
+    },
+    "name": "Ruby"
+
+},
+{
+    "weather": [
+        {
+            "id": 804,
+            "main": "Clouds",
+            "description": "broken clouds",
+            "icon": "04d"
+        }
+    ],
+
+    "main": {
+        "temp": 281.51,
+        "temp_min": 280.93,
+        "temp_max": 282.15,
+        "pressure": 1011,
+        "humidity": 37
+    },
+    "wind": {
+        "speed": 6.69,
+        "deg": 330,
+        "dir": "north-west",
+        "chillfactor": "sdfg"
+
+    },
+    "name": "Coventry"
+
+},
+{
+    "weather": [
+        {
+            "id": 805,
+            "main": "Snow",
+            "description": "snow",
+            "icon": "04d"
+        }
+    ],
+
+    "main": {
+        "temp": 281.51,
+        "temp_min": 280.93,
+        "temp_max": 282.15,
+        "pressure": 1011,
+        "humidity": 37
+    },
+    "wind": {
+        "speed": 6.69,
+        "deg": 330,
+        "dir": "north-east",
+        "chillfactor": "sdfg"
+
+    },
+    "name": "Northampton"
+
+},
+{
+    "weather": [
+        {
+            "id": 806,
+            "main": "Sun",
+            "description": "Sunny Day",
+            "icon": "04d"
+        }
+    ],
+
+    "main": {
+        "temp": 281.51,
+        "temp_min": 280.93,
+        "temp_max": 282.15,
+        "pressure": 1011,
+        "humidity": 37
+    },
+    "wind": {
+        "speed": 6.69,
+        "deg": 330,
+        "dir": "north-west",
+        "chillfactor": "sdfg"
+
+    },
+    "name": "London"
+
+} 
 ]}
