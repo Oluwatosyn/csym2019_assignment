@@ -1,4 +1,4 @@
-let apiKey = 'ce7b672af0382b6a9b6c535ca2be9a81';
+let apiKey = 'ce7b672af0382b6a9b6c535ca2be9a81&units=imperial';
 let apiUrl = 'https://api.openweathermap.org/data/2.5/weather?q=';
 
 $(document).ready(function() {
@@ -29,13 +29,17 @@ $(document).ready(function() {
 				success: function(response) {
 					console.log(response);
 					let txt = "";
+					var d= new Date($.now());
+					
+					
+					//let date =timeConvert(datetime);
 					// let info = "";
 
 					txt += "<table><tr>";
 					txt += "<th>City Name</th>";
 					txt += "<th>Date</th>";
 					txt += "<th>Weather Conditions</th>";
-					txt += "<th>Temperature</th>";
+					txt += "<th>Temperature </th>";
 					txt += "<th>Wind Speed</th>";
 					txt += "<th>Wind Direction</th>";
 					txt += "<th>Weather Icon</th>";
@@ -44,13 +48,26 @@ $(document).ready(function() {
 					txt += "<tr>";
 
 					txt += "<td>" + response.name + "</td>";
-					txt += "<td>" + response.date + "</td>";
+					txt += "<td>" + d.toDateString() + "</td>";
 					txt += "<td>" + response.weather[0].description + "</td>";
-					txt += "<td>" + response.main.temp + "</td>";
+					//txt += "<td>" + response.main.temp+ "°F"+"</td>";
+					txt += "<td>" + farToCelc(response.main.temp)+ "°C" + response.main.temp+ "°F"+"</td>";
 					txt += "<td>" + response.wind.speed + "</td>";
 					txt += "<td>" + response.wind.dir + "</td>";
 
+					 //if (response.main.temp >35||response.main.temp < -5 ){
+					  	//txt =  "a severe weather warning must be issued";
 
+					  //} 
+
+					console.log(response.main.temp);
+
+
+					function farToCelc(fahrenheit){
+					return ((fahrenheit - 32) * 5/9);
+					}
+					
+					  
 					$.each(response.weather, function() {
 
 						let iconID = response.weather[0].icon;
@@ -78,7 +95,7 @@ $(document).ready(function() {
 							"padding": "0.5rem"
 						});
 					});
-
+				
 				},
 
 				error: function(xhr, error) {
@@ -88,3 +105,4 @@ $(document).ready(function() {
 		});
 	});
 });
+
