@@ -1,326 +1,238 @@
-﻿{"cities":[
-    {
-        "weather": [
-            {
-                "id": 801,
-                "main": "Clouds",
-                "description": "broken clouds",
-                "icon": "04d"
-            }
-        ],
-
-        "main": {
-            "temp": 281.51,
-            "temp_min": 280.93,
-            "temp_max": 282.15,
-            "pressure": 1011,
-            "humidity": 37
-        },
-        "wind": {
-            "speed": 6.69,
-            "deg": 330,
-			"dir": "north-west",
-            "chillfactor": "sdfg"
-
-        },
-        "name": "Coventry"
-	
-  },
-  {
-        "weather": [
-            {
-                "id": 802,
-                "main": "Clouds",
-                "description": "broken clouds",
-                "icon": "04d"
-            }
-        ],
-
-        "main": {
-            "temp": 281.51,
-            "temp_min": 280.93,
-            "temp_max": 282.15,
-            "pressure": 1011,
-            "humidity": 37
-        },
-        "wind": {
-            "speed": 6.69,
-            "deg": 330,
-			"dir": "north-west",
-            "chillfactor": "sdfg"
-
-        },
-        "name": "Glassdoor"
-	
-  },
-  {
-        "weather": [
-            {
-                "id": 803,
-                "main": "Clouds",
-                "description": "cloud",
-                "icon": "04d"
-            }
-        ],
-
-        "main": {
-            "temp": 281.51,
-            "temp_min": 280.93,
-            "temp_max": 282.15,
-            "pressure": 1011,
-            "humidity": 37
-        },
-        "wind": {
-            "speed": 6.69,
-            "deg": 330,
-			"dir": "south-west",
-            "chillfactor": "sdfg"
-
-        },
-        "name": "Ruby"
-	
-  },
-  {
-        "weather": [
-            {
-                "id": 804,
-                "main": "Clouds",
-                "description": "broken clouds",
-                "icon": "04d"
-            }
-        ],
-
-        "main": {
-            "temp": 281.51,
-            "temp_min": 280.93,
-            "temp_max": 282.15,
-            "pressure": 1011,
-            "humidity": 37
-        },
-        "wind": {
-            "speed": 6.69,
-            "deg": 330,
-			"dir": "north-west",
-            "chillfactor": "sdfg"
-
-        },
-        "name": "Coventry"
-	
-  },
-  {
-        "weather": [
-            {
-                "id": 805,
-                "main": "Snow",
-                "description": "snow",
-                "icon": "04d"
-            }
-        ],
-
-        "main": {
-            "temp": 281.51,
-            "temp_min": 280.93,
-            "temp_max": 282.15,
-            "pressure": 1011,
-            "humidity": 37
-        },
-        "wind": {
-            "speed": 6.69,
-            "deg": 330,
-			"dir": "north-east",
-            "chillfactor": "sdfg"
-
-        },
-        "name": "Northampton"
-	
-  },
-  {
-        "weather": [
-            {
-                "id": 806,
-                "main": "Sun",
-                "description": "Sunny Day",
-                "icon": "04d"
-            }
-        ],
-
-        "main": {
-            "temp": 281.51,
-            "temp_min": 280.93,
-            "temp_max": 282.15,
-            "pressure": 1011,
-            "humidity": 37
-        },
-        "wind": {
-            "speed": 6.69,
-            "deg": 330,
-			"dir": "north-west",
-            "chillfactor": "sdfg"
-
-        },
-        "name": "London"
-	
-  },
-  {
-    "weather": [
+﻿{
+    "cities": [
         {
-            "id": 801,
-            "main": "Clouds",
-            "description": "broken clouds",
-            "icon": "04d"
-        }
-    ],
-
-    "main": {
-        "temp": 281.51,
-        "temp_min": 280.93,
-        "temp_max": 282.15,
-        "pressure": 1011,
-        "humidity": 37
-    },
-    "wind": {
-        "speed": 6.69,
-        "deg": 330,
-        "dir": "north-west",
-        "chillfactor": "sdfg"
-
-    },
-    "name": "Coventry"
-
-},
-{
-    "weather": [
+            "weather": [
+                {
+                    "id": 101,
+                    "main": "Clouds",
+                    "description": "broken clouds"
+                }
+            ],
+            "main": {
+                "temp": 52.48
+            },
+            "wind": {
+                "speed": 1.99,
+                "deg": 105,
+                "dir": "north-west",
+                "chillfactor": 25.60
+            },
+            "name": "Bath"
+        },
         {
-            "id": 802,
-            "main": "Clouds",
-            "description": "broken clouds",
-            "icon": "04d"
-        }
-    ],
-
-    "main": {
-        "temp": 281.51,
-        "temp_min": 280.93,
-        "temp_max": 282.15,
-        "pressure": 1011,
-        "humidity": 37
-    },
-    "wind": {
-        "speed": 6.69,
-        "deg": 330,
-        "dir": "north-west",
-        "chillfactor": "sdfg"
-
-    },
-    "name": "Glassdoor"
-
-},
-{
-    "weather": [
+            "weather": [
+                {
+                    "id": 102,
+                    "main": "Clouds",
+                    "description": "heavy clouds"
+                }
+            ],
+            "main": {
+                "temp": 66.7
+            },
+            "wind": {
+                "speed": 1.01,
+                "deg": 201,
+                "dir": "south-west",
+                "chillfactor": 25.10
+            },
+            "name": "Bristol"
+        },
         {
-            "id": 803,
-            "main": "Clouds",
-            "description": "cloud",
-            "icon": "04d"
-        }
-    ],
-
-    "main": {
-        "temp": 281.51,
-        "temp_min": 280.93,
-        "temp_max": 282.15,
-        "pressure": 1011,
-        "humidity": 37
-    },
-    "wind": {
-        "speed": 6.69,
-        "deg": 330,
-        "dir": "south-west",
-        "chillfactor": "sdfg"
-
-    },
-    "name": "Ruby"
-
-},
-{
-    "weather": [
+            "weather": [
+                {
+                    "id": 103,
+                    "main": "Clouds",
+                    "description": "cloud"
+                }
+            ],
+            "main": {
+                "temp": 68.88
+            },
+            "wind": {
+                "speed": 6.69,
+                "deg": 330,
+                "dir": "south-west",
+                "chillfactor": 35.30
+            },
+            "name": "Birmingham"
+        },
         {
-            "id": 804,
-            "main": "Clouds",
-            "description": "broken clouds",
-            "icon": "04d"
-        }
-    ],
-
-    "main": {
-        "temp": 281.51,
-        "temp_min": 280.93,
-        "temp_max": 282.15,
-        "pressure": 1011,
-        "humidity": 37
-    },
-    "wind": {
-        "speed": 6.69,
-        "deg": 330,
-        "dir": "north-west",
-        "chillfactor": "sdfg"
-
-    },
-    "name": "Coventry"
-
-},
-{
-    "weather": [
+            "weather": [
+                {
+                    "id": 104,
+                    "main": "Clouds",
+                    "description": "broken clouds"
+                }
+            ],
+            "main": {
+                "temp": 55.8
+            },
+            "wind": {
+                "speed": 6.69,
+                "deg": 330,
+                "dir": "north-west",
+                "chillfactor": 36.70
+            },
+            "name": "Bradford"
+        },
         {
-            "id": 805,
-            "main": "Snow",
-            "description": "snow",
-            "icon": "04d"
-        }
-    ],
-
-    "main": {
-        "temp": 281.51,
-        "temp_min": 280.93,
-        "temp_max": 282.15,
-        "pressure": 1011,
-        "humidity": 37
-    },
-    "wind": {
-        "speed": 6.69,
-        "deg": 330,
-        "dir": "north-east",
-        "chillfactor": "sdfg"
-
-    },
-    "name": "Northampton"
-
-},
-{
-    "weather": [
+            "weather": [
+                {
+                    "id": 105,
+                    "main": "Snow",
+                    "description": "snow"
+                }
+            ],
+            "main": {
+                "temp": 53.78
+            },
+            "wind": {
+                "speed": 1.99,
+                "deg": 31,
+                "dir": "north-east",
+                "chillfactor": 23.42
+            },
+            "name": "Bournemouth"
+        },
         {
-            "id": 806,
-            "main": "Sun",
-            "description": "Sunny Day",
-            "icon": "04d"
+            "weather": [
+                {
+                    "id": 106,
+                    "main": "Sun",
+                    "description": "Sunny Day"
+                }
+            ],
+            "main": {
+                "temp": 66.54,
+                "pressure": 1011,
+                "humidity": 37
+            },
+            "wind": {
+                "speed": 1.99,
+                "deg": 330,
+                "dir": "north-west",
+                "chillfactor": 28.20
+            },
+            "name": "Cambridge"
+        },
+        {
+            "weather": [
+                {
+                    "id": 107,
+                    "main": "Clouds",
+                    "description": "broken clouds"
+                }
+            ],
+            "main": {
+                "temp": 53.92,
+                "pressure": 1011,
+                "humidity": 37
+            },
+            "wind": {
+                "speed": 3.04,
+                "deg": 101,
+                "dir": "south-east",
+                "chillfactor": 26.50
+            },
+            "name": "Canterbury"
+        },
+        {
+            "weather": [
+                {
+                    "id": 108,
+                    "main": "Clouds",
+                    "description": "broken clouds"
+                }
+            ],
+            "main": {
+                "temp": 66.18,
+                "pressure": 1011,
+                "humidity": 37
+            },
+            "wind": {
+                "speed": 3.2,
+                "deg": 308,
+                "dir": "north-west",
+                "chillfactor": 26.20
+            },
+            "name": "Chester"
+        },
+        {
+            "weather": [
+                {
+                    "id": 109,
+                    "main": "Clouds",
+                    "description": "cloud"
+                }
+            ],
+            "main": {
+                "temp": 53.4
+            },
+            "wind": {
+                "speed": 11.43,
+                "deg": 330,
+                "dir": "south-west",
+                "chillfactor": 28.40
+            },
+            "name": "Derby"
+        },
+        {
+            "weather": [
+                {
+                    "id": 110,
+                    "main": "Clouds",
+                    "description": "broken clouds"
+                }
+            ],
+            "main": {
+                "temp": 53.4
+            },
+            "wind": {
+                "speed": 11.43,
+                "deg": 57,
+                "dir": "east",
+                "chillfactor": 28.10
+            },
+            "name": "Exeter"
+        },
+        {
+            "weather": [
+                {
+                    "id": 111,
+                    "main": "Snow",
+                    "description": "snow"
+                }
+            ],
+            "main": {
+                "temp": 50.5
+            },
+            "wind": {
+                "speed": 8.01,
+                "deg": 359,
+                "dir": "north",
+                "chillfactor": 28.20
+            },
+            "name": "Gloucester"
+        },
+        {
+            "weather": [
+                {
+                    "id": 112,
+                    "main": "Sun",
+                    "description": "Sunny Day"
+                }
+            ],
+            "main": {
+                "temp": 52.81
+            },
+            "wind": {
+                "speed": 1.01,
+                "deg": 92,
+                "dir": "south-east",
+                "chillfactor": 25.60
+            },
+            "name": "London"
         }
-    ],
-
-    "main": {
-        "temp": 281.51,
-        "temp_min": 280.93,
-        "temp_max": 282.15,
-        "pressure": 1011,
-        "humidity": 37
-    },
-    "wind": {
-        "speed": 6.69,
-        "deg": 330,
-        "dir": "north-west",
-        "chillfactor": "sdfg"
-
-    },
-    "name": "London"
-
-} 
-]}
+    ]
+}

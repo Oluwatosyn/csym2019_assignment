@@ -1,5 +1,5 @@
 ﻿{
-    "$schema": "http://json-schema.org/draft-04/schema#",
+    "$schema": "http://json-schema.org/schema#",
     "title": "Weather Report",
     "description": "UK weather summary data",
     "type": "object",
@@ -16,7 +16,7 @@
                             "properties": {
                                 "id": {
                                     "type": "integer",
-                                    "minimum": 0.0
+                                    "minimum": 0
                                 },
                                 "main": {
                                     "type": "string",
@@ -29,16 +29,12 @@
                                 },
                                 "description": {
                                     "type": "string"
-                                },
-                                "icon": {
-                                    "type": "string"
                                 }
                             },
                             "required": [
                                 "id",
                                 "main",
-                                "description",
-                                "icon"
+                                "description"
                             ]
                         }
                     },
@@ -48,45 +44,29 @@
                             "temp": {
                                 "type": "number",
                                 "minimum": 0.0
-                            },
-                            "temp_min": {
-                                "type": "number"
-                            },
-                            "temp_max": {
-                                "type": "number"
-                            },
-                            "pressure": {
-                                "type": "integer"
-                            },
-                            "humidity": {
-                                "type": "integer"
-                            },
-                            "unit": {
-                                "type": "string"
                             }
                         },
                         "required": [
-                            "temp",
-                            "temp_min",
-                            "temp_max",
-                            "pressure",
-                            "humidity"
+                            "temp"
                         ]
                     },
                     "wind": {
                         "type": "object",
                         "properties": {
                             "speed": {
-                                "type": "number"
+                                "type": "number",
+                                "minimum": 0.0
                             },
                             "deg": {
-                                "type": "integer"
+                                "type": "integer",
+                                "minimum": 0
                             },
                             "dir": {
                                 "type": "string"
                             },
                             "chillfactor": {
-                                "type": "string"
+                                "type": "number",
+                                "minimum": 0.0
                             }
                         },
                         "required": [
