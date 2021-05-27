@@ -1,9 +1,42 @@
-body {
-    font-family: Tahoma, arial, sans-serif;
+
+    body {
+        background-color: azure;
+        font-family: Tahoma, arial, sans-serif;
+        text-align: center;
     }
-    
-    h1 {color: #554000;}
-    
-    
-    
-    
+    .logo{
+        height : 80px;
+        max-width : 100%;
+        }
+
+      .menu{
+          background-color: cadetblue;
+          padding-top: 1px;
+          padding-bottom: 5px;
+          width:100%;
+
+      }
+      #countries{
+            margin-right: 20px ;
+      }
+      #cities{
+        margin-right: 20px ;
+  }
+        table{
+            width: 100%;
+            border-collapse : collapse;
+        }
+
+        th {
+            background-color : cadetblue;
+            padding : 20px 10px;
+            }
+         td {
+             background-color:  #d3d3d380;
+            padding : 10px;
+            text-align : center;
+            }
+         .buttom{
+            bottom:0px;
+            position: absolute;
+         }
