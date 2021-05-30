@@ -1,9 +1,10 @@
-
+// This recursive function that calls itself to complete its task, the ready method make the callback function avaiable after the document is loaded.
 $(document).ready(function () {
+	//declare the global variable
 	let apiKey = 'ce7b672af0382b6a9b6c535ca2be9a81';
 	let apiUrl = 'https://api.openweathermap.org/data/2.5/weather?q=';
 
-	let tableHeader = "<table><tr>";
+	let tableHeader = "<table><tr>";  // the variable 'tableHeader' holds the table information
 	tableHeader += "<th>City Name</th>";
 	tableHeader += "<th>Date</th>";
 	tableHeader += "<th>Weather Conditions</th>";
@@ -14,51 +15,52 @@ $(document).ready(function () {
 	tableHeader += "<th>Weather Icon</th>";
 	tableHeader += "</tr>";
 
-	let tableRow = '';
+	let tableRow = ''; // Initialse variable tableRow
 
-	$("#countries").change(function () {
-		let country = $(this).val();
-		$("#citiesinfo").hide();
+	$("#countries").change(function () { //change() function callback whenever the countries value get changed
+		let country = $(this).val(); // the variable 'country' holds the value get from the  selected html elements 
+		$("#citiesinfo").hide(); //the hide method hide the citiesinfo
 
-		if (country == "none") {
+		if (country == "none") { // if no country is selected, do not load the cities
 			$("#cities").load('');
 		}
 
-		if (country == "england") {
+		if (country == "england") { //if country selected is england, load england-cities html
 			$("#cities").load("england-cities.html");
 
 		}
-		if (country == "nireland") {
+		if (country == "nireland") {  //if country selected is nireland, load nireland-cities html
 			$("#cities").load("nireland-cities.html");
 
 		}
 
-		if (country == "scotland") {
+		if (country == "scotland") {  //if country selected is scotland, load scotland-cities html
 			$("#cities").load("scotland-cities.html");
 		}
-		if (country == "wales") {
+		if (country == "wales") { //if country selected is wales, load wales-cities html
 			$("#cities").load("wales-cities.html");
 		}
 
 
-		$("#cities").change(function () {
-			var city = $(this).val();
+		$("#cities").change(function () { //change() function callback whenever the cities value get changed
+			var city = $(this).val();  // the variable 'city' holds the value get from the  selected 
 			console.log(city);
-
+				// the variable 'dynamicAPIUrl' holds the target source from the server 
 			let dynamicAPIUrl = apiUrl + city + '&appid=' + apiKey + '&units=imperial&country=GB';
 
+			//the ajax request takes a configuration object required to complete an Ajax request.
 			$.ajax({
 				url: dynamicAPIUrl,
 				type: "GET",
 				dataType: "json",
-				success: function (response) {
+				success: function (response) { //A callback function to run if the Ajax request is successful. The function returns the data as a parameter
 					console.log(response);
 					tableRow = '';
-					let currentDatetime = new Date();
-					let date = currentDatetime.getDate() + "-" + (currentDatetime.getMonth() + 1) + "-" + currentDatetime.getFullYear();
+					let currentDatetime = new Date(); //the variable current_datetime hold the new date object
+					let date = currentDatetime.getDate() + "-" + (currentDatetime.getMonth() + 1) + "-" + currentDatetime.getFullYear(); //  to convert date to format dd-mmm-yyyy
 
 					tableRow += "<tr>";
-					tableRow += "<td>" + response.name + "</td>";
+					tableRow += "<td>" + response.name + "</td>"; // the variable 'tableRow' holds the name data received from the server and display it on the tabele data element
 					tableRow += "<td>" + date + "</td>";
 					tableRow += "<td>" + response.weather[0].description + "</td>";
 					tableRow += "<td>" + farToCelc(response.main.temp) + "°C | " + response.main.temp + "°F" + "</td>";
@@ -69,17 +71,17 @@ $(document).ready(function () {
 					tableRow += "</tr>";
 
 
-					$("#citiesinfo").show();
+					$("#citiesinfo").show(); //display the citiesinfo in the div	
 
 
-					function ResolveWeatherIcon(iconID, description) {
+					function ResolveWeatherIcon(iconID, description) {  //the function ResolveWeatherIcon hold the parameter of iconID and description
 						let iconPath = "http://openweathermap.org/img/wn/" + iconID + "@2x.png";
 
 						return "<img src=\"" + iconPath + "\"alt=\"" + description + "\">";
 
 					}
 
-					function severWeatherCheck(temp, speed) {
+					function severWeatherCheck(temp, speed) { //the function severWeatherCheck holds the parameter temp and speed
 						var warning = "Nice";
 						var tempC = temp;
 						if (tempC > 35) {
@@ -96,14 +98,14 @@ $(document).ready(function () {
 					}
 
 
-					function farToCelc(fahrenheit) {
+					function farToCelc(fahrenheit) { // the function farToCelc holds the parameter fahrenheit
 						var result = 0;
 						result = ((fahrenheit - 32) * 5 / 9);
 						return +(Math.round(result + "e+2") + "e-2");
 
 					}
 
-					function mphTokmph(mph) {
+					function mphTokmph(mph) { //the function mphTokmph holds the parameter mph
 						var result = (mph * 1.609344);
 						return +(Math.round(result + "e+2") + "e-2");
 					}
@@ -164,11 +166,11 @@ $(document).ready(function () {
 					}
 
 
-					$("#citiesinfo").empty('');
-					$("#citiesinfo").append(tableHeader + tableRow);
+					$("#citiesinfo").empty(''); // set the citiesinfo empty
+					$("#citiesinfo").append(tableHeader + tableRow); //insert the required content of the variable 'tableHeader' and 'tableRow' to table citiesinfo 	
 
 
-					$("#citiesinfo").css({
+					$("#citiesinfo").css({ //the .css()set a single CSS property for the div tag with id citiesinfo elements.
 						"border-color": "cadetblue",
 						"background-color": "#fffff",
 						"border-weight": "1px",
@@ -179,8 +181,8 @@ $(document).ready(function () {
 					});
 				},
 
-				error: function (xhr, error) {
-					$("#info").append(error.toUpperCase() + ". HTTP status: " + xhr.status);
+				error: function (xhr, error) { //this function is to display error
+					$("#info").append(error.toUpperCase() + ". HTTP status: " + xhr.status); // error are appended to the html tag
 				}
 			});
 		});
